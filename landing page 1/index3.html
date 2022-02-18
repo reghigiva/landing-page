@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frostid Website Landing Page</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style3.css">
+    
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+    <a href="#"><img src="logo.png" class="logo"></a>
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar" class="fas fa-bars"></label>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#features">features</a>
+        <a href="#about">about</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+<div class="content">
+        <h3>Welcome to <span> Frostid</span></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus suscipit porro nam libero natus error consequatur sed repudiandae eos quo?</p>
+        <a href="https://frostid.net/admin/login" class="btn">Login</a>
+    </div>
+
+    <div class="image">
+        <img src="frostid3.jpeg" class="Frostid" alt="">
+    </div>
+<ul class="thumb">
+        <li><img src="frostid3.jpeg" onclick="imgSlider('frostid3.jpeg');ChangeCircleColor('#009dff')"></li>
+        <li><img src="frostid1.jpeg" onclick="imgSlider('frostid1.jpeg');ChangeCircleColor('#59bfff')"></li>
+        <li><img src="frostid2.jpeg" onclick="imgSlider('frostid2.jpeg');ChangeCircleColor('#8cd3ff')"></li>
+    </ul>
+    
+
+</section>
+
+<script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.Frostid').src = anything;
+        }
+        </script>
+<!-- home section ends -->
+
+<!-- features section starts  -->
+
+<section id="features" class="features">
+<!-- <div class="wrapper"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,160L48,160C96,160,192,160,288,133.3C384,107,480,53,576,53.3C672,53,768,107,864,128C960,149,1056,139,1152,122.7C1248,107,1344,85,1392,74.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg></div> -->
+<!-- <div class="features"> --><h1 class="heading"> app features </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="frostid3.jpeg" alt="">
+            <h3>Dashboard</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="frostid1.jpeg" alt="">
+            <h3>Laporan Banjir</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="frostid2.jpeg" alt="">
+            <h3>Node</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
+            <a href="#" class="btn">read more</a>
+
+    </div>
+</div>
+    
+
+</section>
+<!-- features section ends -->
+
+<!-- newsletter  -->
+<div class="newsletter">
+
+    <h3>Subscribe For New Features</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sed aliquam quibusdam neque magni magnam est laborum doloribus, facere dolores.</p>
+    <form action="">
+        <input type="email" placeholder="enter your email">
+        <input type="submit" value="Subscribe">
+    </form>
+
+</div>
+<!-- review section starts  -->
+
+<!-- about section starts  -->
+<section class="about flex" id="about">
+
+    <h1 class="heading"> about the app </h1>
+
+    <div class="column">
+
+        <div class="image">
+            <img src="about-img.png" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Aplikasi pelaporan jalan banjir berbasis warga pada navigasi berlalu lintas.</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat deserunt saepe repudiandae veniam soluta minima dolor hic aperiam iure.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quaerat. Dolorem ratione saepe magni quo inventore porro ab voluptates eos, nam eius provident accusantium, quia similique est, repellendus et reiciendis.</p>
+            <div class="buttons">
+                <a href="https://drive.google.com/file/d/1DzvdSKNh0wAAT9aXu-9BSX3IctdzqICd/view?usp=sharing" class="btn"> <i class="fa fa-download" aria-hidden="true"></i> Download </a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<form action="">
+
+        <h1 class="heading">contact us</h1>
+
+        <div class="inputBox">
+            <input type="text" required>
+            <label>name</label>
+        </div>
+
+        <div class="inputBox">
+            <input type="email" required>
+            <label>email</label>
+        </div>
+
+        <div class="inputBox">
+            <input type="number" required>
+            <label>phone</label>
+        </div>
+
+        <div class="inputBox">
+            <textarea required name="" id="" cols="30" rows="10"></textarea>
+            <label>message</label>
+        </div>
+
+        <input type="submit" class="btn" value="send message">
+
+    </form>
+    <div class="image">
+        <img src="contact-img.png" alt="">
+    </div>
+
+</section>
+
+<!-- contact section edns -->
+
+<!-- footer section starts  -->
+
+<div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Aplikasi pelaporan jalan banjir berbasis warga pada navigasi berlalu lintas.</p>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">features</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <div class="info">
+                <i class="fas fa-phone"></i>
+                <p> +123-456-7890 <br> +111-2222-333 </p>
+            </div>
+            <div class="info">
+                <i class="fas fa-envelope"></i>
+                <p> example@gmail.com <br> example@gmail.com </p>
+            </div>
+            <div class="info">
+                <i class="fas fa-map-marker-alt"></i>
+                <p> surabaya, indonesia - 400104 </p>
+            </div>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> &copy; copyright @Danura 2021 </h1>
+
+</div>
+
+<!-- footer section ends -->
+</body>
+</html>
